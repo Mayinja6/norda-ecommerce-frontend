@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --violet_clr:#6f50a7;
+  --blue_clr:#0064e0;
+  --teal_clr:#5bc1b5;
+  --orange_clr: #e44311;
+  --lime_clr :#6aae27;
+  --red_clr::#ff2f2f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+input,
+textarea {
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  max-width: 30px !important;
+  height: 30px !important;
+  max-height: 30px !important;
+  padding: 4px !important;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #666;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+.swiper-button-next {
+  right: 0px !important;
+}
+.swiper-button-prev {
+  left: 0px !important;
+}
+
+.heroSection .swiper-button-next {
+  right: 30px !important;
+}
+.heroSection .swiper-button-prev {
+  left: 30px !important;
+}
+
+@media (max-width: 765px) {
+  .heroSection .swiper-button-next {
+    right: 15px !important;
+  }
+  .heroSection .swiper-button-prev {
+    left: 15px !important;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  padding: 4px !important;
+  color: #666;
+}
+
+.account_tab {
+  padding: 30px;
+  border: 1px solid #eee;
+}
+@media only screen and (max-width: 767px) {
+  .account_tab {
+    padding: 20px 15px;
+  }
+}
+
+.account_heading {
+  font-size: 20px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.dropzone {
+  padding: 70px 0px 20px;
+  cursor: pointer;
+  border: 2px dashed;
+}
+.dropZoneReject {
+  border: 2px dashed red;
+}
+.dropZoneAccept {
+  border: 2px dashed green;
+}
