@@ -13,6 +13,7 @@ const MobileDrawer = ({ setOpenMobileDrawer }) => {
         { name: "shopping Cart", to: "/cart" },
         { name: "Shopping Wishlist", to: "/wishlist" },
         { name: "Checkout", to: "/checkout" },
+        { name: "New Product", to: "/new-product" },
       ],
     },
     {
@@ -23,6 +24,7 @@ const MobileDrawer = ({ setOpenMobileDrawer }) => {
         { name: "contact", to: "/contact" },
         { name: "Privacy Policy", to: "/privacy-policy" },
         { name: "my account", to: "/account" },
+
       ],
     },
   ];
